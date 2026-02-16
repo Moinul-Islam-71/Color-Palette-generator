@@ -1,4 +1,4 @@
-const tClrs = 100;
+const tClrs = 12;
 
 
 const container = document.getElementById(`palette-container`);
@@ -6,7 +6,7 @@ const totalColor = document.getElementById(`total-color`);
 totalColor.textContent = tClrs; //used in generateColorPaletteHTML() & updatePalette
 
 function generateColorPaletteHTML() {
-    
+
     for (let i = 1; i <= tClrs; i++) {
         const paletteHTML =
             `<div class="color-box w-full rounded-lg overflow-hidden shadow-xl hover:scale-[0.9] active:scale-[0.9] transition-all duration-500">
