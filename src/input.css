@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+    /* Custom background gradient colors */
+  --color-bg-start: #93c5fd;
+  --color-bg-end: #cbd5e1;
+  
+  /* Font selection */
+  --font-inter: "Inter", sans-serif;
+}
+
+/* Custom Base Styles */
+@layer base {
+  body {
+    background: linear-gradient(180deg, var(--color-bg-start) 0%, var(--color-bg-end) 100%);
+  }
+}
